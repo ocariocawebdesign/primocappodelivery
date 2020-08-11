@@ -47,7 +47,7 @@ if (diaPromocao === "Segunda" || diaPromocao === "Quarta") {
   promocao01.style.background = "rgba(44, 42, 44, 0.3)";
   promocao02.style.background = "rgba(44, 42, 44, 0.3)";
 } else {
-  
+
   //promocao01.innerHTML = "<h5>Não temos promoções disponíveis</h5>";
   indisponivel01.innerHTML = "Promoção indisponível";
   indisponivel02.innerHTML = "Promoção indisponível";
@@ -199,7 +199,7 @@ function dadosFormClienteEnvio() {
       dadosCliente = dadosCliente.replace(/[ ]/g, "%20");
       document.getElementById(
         "whatsapp-share-btt"
-      ).href = `https://api.whatsapp.com/send?phone=5521971025148&text=Olá! Acessei a página Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Promoção do dia ${diaPromocao} | Bairro: ${dados.enderecoBairro} | ${dadosCliente} | Confirmação de modo de pagamento: ${dados.pagamentoEscolhido}.`;
+      ).href = `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Promoção do dia ${diaPromocao} | Bairro: ${dados.enderecoBairro} | ${dadosCliente} | Confirmação de modo de pagamento: ${dados.pagamentoEscolhido}.`;
     },
     false
   );
