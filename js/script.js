@@ -136,6 +136,9 @@ function pesquisacep(valor) {
 let form = document.querySelector("form");
 let log = document.querySelector("#resRad");
 let opcoes;
+let btn1 = document.querySelector("#btn1");
+
+
 
 function dadosFormClienteEnvio() {
   document.addEventListener("DOMContentLoaded", function (event) {
@@ -157,7 +160,6 @@ function dadosFormClienteEnvio() {
 
       let dados = new Object();
       //Retorna esse objeto
-
       dados["enderecoRua"] = document.querySelector("#rua").value;
       dados["enderecoBairro"] = document.querySelector("#bairro").value;
       dados["enderecoComplemento"] = document.querySelector("#complemento").value;
@@ -172,6 +174,12 @@ function dadosFormClienteEnvio() {
       console.log(opcoes);
       console.log(dados);
 
+
+      btn1.addEventListener("click", () =>{
+
+        alert("Pedido confirmado")
+
+      });
 
         //Revisar as promoções para inserir na mensagemn wp
       var promocoes;
