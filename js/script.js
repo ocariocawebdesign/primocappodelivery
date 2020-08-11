@@ -137,6 +137,7 @@ let form = document.querySelector("form");
 let log = document.querySelector("#resRad");
 let opcoes;
 let btn1 = document.querySelector("#btn1");
+let confirmacao = document.querySelector("#confirmacao")
 
 
 
@@ -177,7 +178,7 @@ function dadosFormClienteEnvio() {
 
       btn1.addEventListener("click", () =>{
 
-        alert("Pedido confirmado")
+        confirmacao.innerHTML = "Dados confirmados! Clique em enviar pedido.";
 
       });
 

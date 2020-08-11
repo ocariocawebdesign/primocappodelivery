@@ -47,6 +47,17 @@ p {
   color: #333;
 }
 
+.informacao{
+
+  font-size: 12px!important;
+  color:red;
+}
+
+#confirmacao{
+
+  font-weight: bold;
+  font-size: 14px;
+}
 .modal-header {
   padding: 0.4rem !important;
 }
