@@ -15,31 +15,31 @@ let data = new Date();
 let diaDaSemana = new Array(7);
 
 diaDaSemana[0] = "Domingo";
-diaDaSemana[1] = "Segunda";
-diaDaSemana[2] = "Terça";
-diaDaSemana[3] = "Quarta";
-diaDaSemana[4] = "Quinta";
-diaDaSemana[5] = "Sexta";
-diaDaSemana[6] = "Sabado";
+diaDaSemana[1] = "Segunda-Dose-Dupla";
+diaDaSemana[2] = "Terça-Ganhe-1-brotinho-doce";
+diaDaSemana[3] = "Quarta-Dose-Dupla";
+diaDaSemana[4] = "Quinta-Ganhe-1-brotinho-doce";
+diaDaSemana[5] = "Sexta-Ganhe-1-refri-2-litros";
+diaDaSemana[6] = "Sabado-Ganhe-1-refri-2-litros";
 
 var diaPromocao = diaDaSemana[data.getDay()];
 console.log(diaPromocao);
 
-if (diaPromocao === "Segunda" || diaPromocao === "Quarta") {
+if (diaPromocao === "Segunda-Dose-Dupla" || diaPromocao === "Quarta-Dose-Dupla") {
   indisponivel02.innerHTML = "Promoção indisponível";
   indisponivel03.innerHTML = "Promoção indisponível";
   botoesPromocao02.style.display = "none";
   botoesPromocao03.style.display = "none";
   promocao02.style.background = "rgba(44, 42, 44, 0.3)";
   promocao03.style.background = "rgba(44, 42, 44, 0.3)";
-} else if (diaPromocao === "Terça" || diaPromocao === "Quinta") {
+} else if (diaPromocao === "Terça-Ganhe-1-brotinho-doce" || diaPromocao === "Quinta-Ganhe-1-brotinho-doce") {
   indisponivel01.innerHTML = "Promoção indisponível";
   indisponivel03.innerHTML = "Promoção indisponível";
   botoesPromocao01.style.display = "none";
   botoesPromocao03.style.display = "none";
   promocao01.style.background = "rgba(44, 42, 44, 0.3)";
   promocao03.style.background = "rgba(44, 42, 44, 0.3)";
-} else if (diaPromocao === "Sexta" || diaPromocao === "Sabado") {
+} else if (diaPromocao === "Sexta-Ganhe-1-refri-2-litros" || diaPromocao === "Sabado-Ganhe-1-refri-2-litros") {
   indisponivel01.innerHTML = "Promoção indisponível";
   indisponivel02.innerHTML = "Promoção indisponível";
   botoesPromocao01.style.display = "none";
@@ -47,7 +47,6 @@ if (diaPromocao === "Segunda" || diaPromocao === "Quarta") {
   promocao01.style.background = "rgba(44, 42, 44, 0.3)";
   promocao02.style.background = "rgba(44, 42, 44, 0.3)";
 } else {
-
   //promocao01.innerHTML = "<h5>Não temos promoções disponíveis</h5>";
   indisponivel01.innerHTML = "Promoção indisponível";
   indisponivel02.innerHTML = "Promoção indisponível";
@@ -59,7 +58,7 @@ if (diaPromocao === "Segunda" || diaPromocao === "Quarta") {
   promocao01.style.background = "rgba(44, 42, 44, 0.3)";
   promocao02.style.background = "rgba(44, 42, 44, 0.3)";
   promocao03.style.background = "rgba(44, 42, 44, 0.3)";
-};
+}
 
 /*-----------------------------------------------------*/
 //Script para pegar cep
@@ -137,9 +136,7 @@ let form = document.querySelector("form");
 let log = document.querySelector("#resRad");
 let opcoes;
 let btn1 = document.querySelector("#btn1");
-let confirmacao = document.querySelector("#confirmacao")
-
-
+let confirmacao = document.querySelector("#confirmacao");
 
 function dadosFormClienteEnvio() {
   document.addEventListener("DOMContentLoaded", function (event) {
@@ -152,7 +149,7 @@ function dadosFormClienteEnvio() {
       let adicional = new FormData(form);
       let output = "";
       for (const entry of adicional) {
-        output = output + "\r" + entry[0] + ": " + entry[1] + " " + "\r";
+        output = `${output} ${entry[0]}: ${entry[1]}`;
       }
 
       let dadosCliente = output;
@@ -175,14 +172,11 @@ function dadosFormClienteEnvio() {
       console.log(opcoes);
       console.log(dados);
 
-
-      btn1.addEventListener("click", () =>{
-
+      btn1.addEventListener("click", () => {
         confirmacao.innerHTML = "Dados confirmados! Clique em enviar pedido.";
-
       });
 
-        //Revisar as promoções para inserir na mensagemn wp
+      //Revisar as promoções para inserir na mensagemn wp
       var promocoes;
 
       if (promocoes === promocao01) {
@@ -196,10 +190,10 @@ function dadosFormClienteEnvio() {
 
       console.log(promocoes);
 
-      dadosCliente = dadosCliente.replace(/[ ]/g, "%20");
-      document.getElementById(
-        "whatsapp-share-btt"
-      ).href = `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Promoção do dia ${diaPromocao} | Bairro: ${dados.enderecoBairro} | ${dadosCliente} | Confirmação de modo de pagamento: ${dados.pagamentoEscolhido}.`;
+      dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
+      document.getElementById("whatsapp-share-btt").href = encodeURI(
+        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoções Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} Promoção do dia: ${diaPromocao} Bairro: ${dados.enderecoBairro} ${dadosCliente} Confirmação de modo de pagamento: ${dados.pagamentoEscolhido}.`
+      );
     },
     false
   );
