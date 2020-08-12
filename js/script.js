@@ -146,15 +146,15 @@ function dadosFormClienteEnvio() {
   form.addEventListener(
     "submit",
     function (event) {
-      let adicional = new FormData(form);
+      let form = new FormData(form01);
       let output = "";
-      for (const entry of adicional) {
+      for (const entry of form) {
         output = `${output} ${entry[0]}: ${entry[1]}`;
       }
 
       let dadosCliente = output;
       event.preventDefault();
-      console.log(dadosCliente);
+      //console.log(dadosCliente);
 
       let dados = new Object();
       //Retorna esse objeto
@@ -168,9 +168,8 @@ function dadosFormClienteEnvio() {
       dados["obsevacaoCliente"] = document.querySelector("#obsevacao").value;
       //dados["adicionalOpcoes"] = document.querySelectorAll("[name=Adicional]");
 
-      console.log(dados.enderecoBairro);
-      console.log(opcoes);
-      console.log(dados);
+      //console.log(dados.enderecoBairro);
+      //console.log(dados);
 
       btn1.addEventListener("click", () => {
         confirmacao.innerHTML = "Dados confirmados! Clique em enviar pedido.";
@@ -187,12 +186,12 @@ function dadosFormClienteEnvio() {
         var promocoes = document.querySelector("#promocao03");
       }
       //Revisar as promoções para inserir na mensagemn wp
+      console.table(promocoes.value);
 
-      console.log(promocoes);
 
       dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
       document.getElementById("whatsapp-share-btt").href = encodeURI(
-        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoções Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} Promoção do dia: ${diaPromocao} Bairro: ${dados.enderecoBairro} ${dadosCliente} Confirmação de modo de pagamento: ${dados.pagamentoEscolhido}.`
+        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoções Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Promoção do dia: ${diaPromocao} | Bairro: ${dados.enderecoBairro} | ${dadosCliente} | Confirmação de modo de pagamento: ${dados.pagamentoEscolhido}.`
       );
     },
     false
