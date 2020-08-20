@@ -49,7 +49,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/estilo.css">
 
-
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -169,12 +169,12 @@
                                 </select>
                                 <br>
                                 <br>
-                                <label for="observacao"> Precisa de troco? (Observações)<span class="span-form-label"> (Obrigatório)</span></label>
+                                <label for="observacao">(Observações)<span class="span-form-label"> </span></label>
                                   <input type="text-area" id="obsevacao" name="Observação" placeholder="">
                                   <br>
                                   <br>
                                   <small class="text-uppercase text-uppercase texto-bolder informacao">Clique 2 vezes para Confirmar seus dados e depois em enviar pedido!</small><br><br>
-                                    <button class="btn btn-danger text-uppercase" onclick="" id="btn1" type="submit">Confirmar dados</button>
+                                    <button class="btn btn-danger text-uppercase" onclick="dadosFormClienteEnvio()" id="btn1" type="submit">Confirmar dados</button>
                                     <br>
                                     <br>
                                     <div class="text-danger text-center text-uppercase" id="confirmacao"></div>

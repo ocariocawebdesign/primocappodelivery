@@ -25,21 +25,30 @@ diaDaSemana[6] = "Sabado-Ganhe-1-refri-2-litros";
 var diaPromocao = diaDaSemana[data.getDay()];
 console.log(diaPromocao);
 
-if (diaPromocao === "Segunda-Dose-Dupla" || diaPromocao === "Quarta-Dose-Dupla") {
+if (
+  diaPromocao === "Segunda-Dose-Dupla" ||
+  diaPromocao === "Quarta-Dose-Dupla"
+) {
   indisponivel02.innerHTML = "Promoção indisponível";
   indisponivel03.innerHTML = "Promoção indisponível";
   botoesPromocao02.style.display = "none";
   botoesPromocao03.style.display = "none";
   promocao02.style.background = "rgba(44, 42, 44, 0.3)";
   promocao03.style.background = "rgba(44, 42, 44, 0.3)";
-} else if (diaPromocao === "Terça-Ganhe-1-brotinho-doce" || diaPromocao === "Quinta-Ganhe-1-brotinho-doce") {
+} else if (
+  diaPromocao === "Terça-Ganhe-1-brotinho-doce" ||
+  diaPromocao === "Quinta-Ganhe-1-brotinho-doce"
+) {
   indisponivel01.innerHTML = "Promoção indisponível";
   indisponivel03.innerHTML = "Promoção indisponível";
   botoesPromocao01.style.display = "none";
   botoesPromocao03.style.display = "none";
   promocao01.style.background = "rgba(44, 42, 44, 0.3)";
   promocao03.style.background = "rgba(44, 42, 44, 0.3)";
-} else if (diaPromocao === "Sexta-Ganhe-1-refri-2-litros" || diaPromocao === "Sabado-Ganhe-1-refri-2-litros") {
+} else if (
+  diaPromocao === "Sexta-Ganhe-1-refri-2-litros" ||
+  diaPromocao === "Sabado-Ganhe-1-refri-2-litros"
+) {
   indisponivel01.innerHTML = "Promoção indisponível";
   indisponivel02.innerHTML = "Promoção indisponível";
   botoesPromocao01.style.display = "none";
@@ -160,7 +169,9 @@ function dadosFormClienteEnvio() {
       //Retorna esse objeto
       dados["enderecoRua"] = document.querySelector("#rua").value;
       dados["enderecoBairro"] = document.querySelector("#bairro").value;
-      dados["enderecoComplemento"] = document.querySelector("#complemento").value;
+      dados["enderecoComplemento"] = document.querySelector(
+        "#complemento"
+      ).value;
       dados["pagamentoEscolhido"] = document.querySelector("#pagamento").value;
       dados["nomeCliente"] = document.querySelector("#cliente").value;
       dados["telefoneCliente"] = document.querySelector("#telefone").value;
@@ -172,6 +183,7 @@ function dadosFormClienteEnvio() {
       //console.log(dados);
 
       btn1.addEventListener("click", () => {
+        swal("Dados confirmados!", "Clique em enviar pedido!", "success");
         confirmacao.innerHTML = "Dados confirmados! Clique em enviar pedido.";
       });
 
@@ -187,7 +199,6 @@ function dadosFormClienteEnvio() {
       }
       //Revisar as promoções para inserir na mensagemn wp
       console.table(promocoes.value);
-
 
       dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
       document.getElementById("whatsapp-share-btt").href = encodeURI(
