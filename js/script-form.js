@@ -139,7 +139,6 @@ function pesquisacep(valor) {
 
 /*-----------------------------------------------------*/
 
-//Formulário
 
 let form = document.querySelector("#form01");
 let btn1 = document.querySelector("#btn1");
@@ -191,6 +190,3 @@ function dadosFormClienteEnvio() {
 }
 
 dadosFormClienteEnvio();
-
-//----------------------------------------
-//${dados[0]},| Telefone: ${dados[1]},| Email: ${dados[2]}, | Cep: ${dados[3]}, | Rua: ${dados[4]}, | Bairro: ${dados[5]}, | Complemento: ${dados[6]}, | Sabor: ${value}.`
