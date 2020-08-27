@@ -144,15 +144,10 @@ function pesquisacep(valor) {
 let form = document.querySelector("#form01");
 let btn1 = document.querySelector("#btn1");
 let confirmacao = document.querySelector("#confirmacao");
-let cliente = document.querySelector("#cliente").value;
-let telefone = document.querySelector("#telefone").value;
-let email = document.querySelector("#email").value;
-let cep = document.querySelector("#cep").value;
-let rua = document.querySelector("#rua").value;
-let bairro = document.querySelector("#bairro").value;
-let complemento = document.querySelector("#complemento").value;
 let select = document.querySelector("#sabores");
 var value = select.options[select.selectedIndex].value;
+let pagamento = document.querySelector("#pagamento");
+let formaPagamento = pagamento.options[pagamento.selectedIndex].value;
 
 function dadosFormClienteEnvio() {
   console.log("script carregou");
@@ -167,21 +162,20 @@ function dadosFormClienteEnvio() {
 
       let dadosCliente = output;
       event.preventDefault();
-      //console.log(dadosCliente);
 
-      let dados = [cliente, telefone, email, cep, rua, bairro, complemento, value];
+      let dados = new Object();
 
-      console.table(`Nome do cliente: ${dados[0]}
-            Telefone: ${dados[1]}
-            Email: ${dados[2]}
-            Cep: ${dados[3]}
-            Rua: ${dados[4]}
-            Bairro: ${dados[5]}
-            Complemento: ${dados[6]}
-            Sabor: ${value}
+      dados["nomeCliente"] = document.querySelector("#cliente").value;
+      dados["telefoneCliente"] = document.querySelector("#telefone").value;
+      dados["emailCliente"] = document.querySelector("#email").value;
+      dados["cepCliente"] = document.querySelector("#cep").value;
+      dados["enderecoRua"] = document.querySelector("#rua").value;
+      dados["enderecoBairro"] = document.querySelector("#bairro").value;
+      dados["enderecoComplemento"] = document.querySelector("#complemento").value;
+      dados["saborEscolhido"] = value;
+      dados["pagamentoEscolhido"] = formaPagamento;
 
-            `);
-
+      console.log(dados);
       btn1.addEventListener("click", () => {
         swal("Dados confirmados!", "Clique em enviar pedido!", "success");
         confirmacao.innerHTML = "Dados confirmados! Clique em enviar pedido.";
@@ -189,7 +183,7 @@ function dadosFormClienteEnvio() {
 
       dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
       document.getElementById("whatsapp-share-btt").href = encodeURI(
-        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoção Strogonoff da PrimoCappo: Meu nome é: ${dados[0]},| Telefone: ${dados[1]},| Email: ${dados[2]}, | Cep: ${dados[3]}, | Rua: ${dados[4]}, | Bairro: ${dados[5]}, | Complemento: ${dados[6]}, | Sabor: ${value}.`
+        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoção Strogonoff da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Telefone: ${dados.telefoneCliente} | Email: ${dados.emailCliente} | Cep: ${dados.cepCliente} | Rua: ${dados.enderecoRua} | Bairro: ${dados.enderecoBairro} | Complemento: ${dados.enderecoComplemento} | Sabor escolhido: ${dados.saborEscolhido} | Forma de pagamento: ${dados.pagamentoEscolhido}.`
       );
     },
     false
@@ -199,32 +193,4 @@ function dadosFormClienteEnvio() {
 dadosFormClienteEnvio();
 
 //----------------------------------------
-// Sabores de pizza
-
-/*
-const sabores = [
-  "Alho e óleo",
-  "Calabresa",
-  "Cappo",
-  "Champignon",
-  "Frango com catupiry",
-  "Marguerita",
-  "Napolitana",
-  "Pepperoni",
-  "Presunto",
-  "Quatro queijos",
-  "Veneza",
-  "Bambina",
-  "Califórnia",
-  "Carne seca com abóbora",
-  "Francesa",
-  "Genova",
-  "Muzzarela",
-  "Palmito",
-  "Portuguesa",
-  "Primo",
-  "Tomate seco com rúcula",
-];
-
-console.log(sabores[1]);
-*/
+//${dados[0]},| Telefone: ${dados[1]},| Email: ${dados[2]}, | Cep: ${dados[3]}, | Rua: ${dados[4]}, | Bairro: ${dados[5]}, | Complemento: ${dados[6]}, | Sabor: ${value}.`

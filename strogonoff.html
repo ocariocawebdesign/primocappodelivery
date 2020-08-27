@@ -91,11 +91,23 @@
           <form id="form01">
             <div class="row">
               <div id="formPromo" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h6>
+                  Escolha o sabor:<span class="span-form-label"
+                    >(Obrigatório)</span
+                  >
+                </h6>
+
+
+                <select id="sabores" class="" name="Opções" required>
+                  <option value="Carne" selected>Carne</option>
+                  <option value="Frango">Frango</option>
+                </select>
+                <br>
                 <label for="cliente">
                   Digite seu nome<span class="span-form-label">
                     (Obrigatório)</span
-                  ></label
-                >
+                  ></label>
+               
                 <input
                   type="text"
                   id="cliente"
@@ -143,16 +155,13 @@
                     maxlength="9"
                     onblur="pesquisacep(this.value);"
                   /> </label
-                ><br />
+                >
                 <label
                   >Rua:
                   <input name="Rua" type="text" id="rua" size="60" /></label
-                ><br />
-                <br />
+                >
                 <label>Bairro:</label>
-                <input name="Bairro" type="text" id="bairro" /><br />
-
-                <br />
+                <input name="Bairro" type="text" id="bairro" />
 
                 <label for="Complemento"
                   >Complemento:<span class="span-form-label">
@@ -166,18 +175,21 @@
                   placeholder="Número Casa / Apartamento"
                   required
                 />
-                <br />
-                <br />
+               <br>
                 <h6>
-                  Escolha o sabor:<span class="span-form-label"
+                  Escolha a forma de pagamento:<span class="span-form-label"
                     >(Obrigatório)</span
                   >
                 </h6>
-
-                <select id="sabores" class="" name="Opções" required>
-                  <option value="Carne" selected>Carne</option>
-                  <option value="Frango">Frango</option>
+                <select id="pagamento" class="" name="Pagamento" required>
+                  <option value="Escolha uma opção" selected>
+                    Escolha uma opção
+                  </option>
+                  <option value="Dinheiro">Dinheiro</option>
+                  <option value="Cartão débito">Cartão de débito</option>
+                  <option value="Cartão de crédito">Cartão de crédito</option>
                 </select>
+                <br />
               </div>
 
               <div
