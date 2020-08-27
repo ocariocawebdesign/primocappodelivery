@@ -198,3 +198,33 @@ function dadosFormClienteEnvio() {
 
 dadosFormClienteEnvio();
 
+//----------------------------------------
+// Sabores de pizza
+
+/*
+const sabores = [
+  "Alho e óleo",
+  "Calabresa",
+  "Cappo",
+  "Champignon",
+  "Frango com catupiry",
+  "Marguerita",
+  "Napolitana",
+  "Pepperoni",
+  "Presunto",
+  "Quatro queijos",
+  "Veneza",
+  "Bambina",
+  "Califórnia",
+  "Carne seca com abóbora",
+  "Francesa",
+  "Genova",
+  "Muzzarela",
+  "Palmito",
+  "Portuguesa",
+  "Primo",
+  "Tomate seco com rúcula",
+];
+
+console.log(sabores[1]);
+*/
