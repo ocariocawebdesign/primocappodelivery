@@ -47,14 +47,12 @@ p {
   color: #333;
 }
 
-.informacao{
-
-  font-size: 12px!important;
-  color:red;
+.informacao {
+  font-size: 12px !important;
+  color: red;
 }
 
-#confirmacao{
-
+#confirmacao {
   font-weight: bold;
   font-size: 14px;
 }
@@ -113,6 +111,7 @@ span {
   font-weight: bold;
 }
 
+
 #promocao01 {
   padding: 0.5rem;
 }
@@ -120,7 +119,6 @@ span {
 #promocao02 {
   padding: 0.5rem;
 }
-
 
 #promocao03 {
   padding: 0.5rem;
@@ -211,7 +209,6 @@ span {
   /*border-color: #357ebd;*/
 }
 
-
 .btn-produtos:hover {
   color: #1c8131;
   font-weight: bold;
@@ -234,6 +231,69 @@ footer {
   font-size: 12px;
 }
 
-i{
-color:rgb(180, 43, 43);
+i {
+  color: rgb(180, 43, 43);
 }
+
+/*------------------------*/
+
+#formPromo {
+  display: flex;
+  flex-direction: column;
+  /*border-right: 1px solid rgb(231, 227, 227);*/
+  /*justify-content: center;*/
+  padding: 2rem;
+  /*margin-left:0.1rem;*/
+}
+
+#formPromo02 {
+  display: flex;
+  flex-direction: column;
+  /*border-left: 1px solid rgb(231, 227, 227);*/
+  justify-content: center!important;
+  align-items: center!important;
+  padding: 2rem;
+  /*margin-left: 0.1rem;*/
+}
+
+.formPromobotao {
+
+  display: inline-block;
+  flex-direction: column;
+  /*justify-content: center!important;*/
+  
+  padding: 0.8rem;
+}
+
+.size-btn{
+
+  width: 100%;
+}
+
+.promocaoTitulo{
+
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  color:#d40000;
+
+
+}
+
+.container-central{
+  display: flex;
+  flex-direction: column;
+  justify-content: center!important;
+  align-items: center!important;
+}
+
+#promocaoStrogonoff{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
