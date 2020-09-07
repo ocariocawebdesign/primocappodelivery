@@ -143,8 +143,8 @@ function pesquisacep(valor) {
 let form = document.querySelector("#form01");
 let btn1 = document.querySelector("#btn1");
 let confirmacao = document.querySelector("#confirmacao");
-let select = document.querySelector("#sabores");
-var value = select.options[select.selectedIndex].value;
+//let select = document.querySelector("#sabores");
+//let value = select.options[select.selectedIndex].value;
 //let pagamento = document.querySelector("#pagamento");
 //let formaPagamento = pagamento.options[pagamento.selectedIndex].value;
 
@@ -171,7 +171,7 @@ function dadosFormClienteEnvio() {
       dados["enderecoRua"] = document.querySelector("#rua").value;
       dados["enderecoBairro"] = document.querySelector("#bairro").value;
       dados["enderecoComplemento"] = document.querySelector("#complemento").value;
-      dados["saborEscolhido"] = value;
+      //dados["saborEscolhido"] = value;
       //dados["pagamentoEscolhido"] = formaPagamento;
 
       console.log(dados);
@@ -182,7 +182,7 @@ function dadosFormClienteEnvio() {
 
       dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
       document.getElementById("whatsapp-share-btt").href = encodeURI(
-        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoção Escalopinho ao Molho Madeira da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Telefone: ${dados.telefoneCliente} | Email: ${dados.emailCliente} | Cep: ${dados.cepCliente} | Rua: ${dados.enderecoRua} | Bairro: ${dados.enderecoBairro} | Complemento: ${dados.enderecoComplemento} | Sabor escolhido: ${dados.saborEscolhido}.`
+        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoção Escalopinho ao Molho Madeira da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Telefone: ${dados.telefoneCliente} | Email: ${dados.emailCliente} | Cep: ${dados.cepCliente} | Rua: ${dados.enderecoRua} | Bairro: ${dados.enderecoBairro} | Complemento: ${dados.enderecoComplemento}.`
       );
     },
     false
