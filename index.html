@@ -56,152 +56,145 @@
 
 <body>
 
-
-
   <header id="">
-    <div class="container-logo">
-    <img id="logoTopo" class="" src="images/logo-small.png" alt="">
-  </div>
-    <h1 class="text-center"></h1>
-
+      <div class="container-logo">
+        <img id="logoTopo" class="" src="images/logo-small.png" alt="">
+      </div>
+      <h1 class="text-center"></h1>
   </header>
 
   <div id="container-principal" class="container">
 
     <h1 class="text-center text-uppercase tituloTop">Promoções Delivery</h1>
-    <h5 class="text-center text-danger text-uppercase tituloTop">Pedidos a partir das 18:30H | Entregas em toda zona sul</h5>
-    <br>
+      <h5 class="text-center text-danger text-uppercase tituloTop">Pedidos a partir das 18:30H | Entregas em toda zona sul</h5>
+      <br>
     <div class="row">
      <!--Incicia produto - Promoção 01-->
 
       <div id="promocao01" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-        <div id="indisponivel01"></div>
-        <div class="container">
-          <img class="img-thumbnail" src="images/bannerPromocaoSemana01-1.png" alt="">
-              <div class="text-danger" id="resRad">
-                <!--<span id="checado" class="gg-check-r gg-check-r::after"></span>-->
-                <h5>Dose dupla!</h5>
-                <p class="text-uppercase">
-                  Promoção válida só segundas e quartas
-                  <br>
-                  <span>Na compra de 1 pizza grande, pague 1 e leve 2!</span>
-                </p>
-              </div>
-        </div>
-
-        <div class=" container text-danger" id="res"></div>
-        <div id="botoesPromocao01" class="centralizar-flex-botoes-01">
-
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-danger pull-left text-uppercase size-btn data-toggle="modal" data-target="#modal">Eu quero!</button>
-          <!--<a href="#" type="reset" value="delete"><button class="btn btn-primary pull-right text-uppercase">Limpar</button></a>-->
-      </div>
-
-        <!-- Modal -->
-        <div class=" modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="img-header-position">
-                      <img class="img-fluid" src="images/" alt="">
-                    </div>
-                    <h5 class="modal-title" id="modalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span id="span-modal" aria-hidden="true">&times;</span>
-                    </button>
+            <div id="indisponivel01"></div>
+            <div class="container">
+              <img class="img-thumbnail" src="images/bannerPromocaoSemana01-1.png" alt="">
+                  <div class="text-danger" id="resRad">
+                    <!--<span id="checado" class="gg-check-r gg-check-r::after"></span>-->
+                    <h5>Dose dupla!</h5>
+                    <p class="text-uppercase">
+                      Promoção válida só segundas e quartas
+                      <br>
+                      <span>Na compra de 1 pizza grande, pague 1 e leve 2!</span>
+                    </p>
                   </div>
+            </div>
+            <div class=" container text-danger" id="res"></div>
+            <div id="botoesPromocao01" class="centralizar-flex-botoes-01">
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-danger pull-left text-uppercase size-btn" data-toggle="modal" data-target="#modal">Eu quero!</button>
+              <!--<a href="#" type="reset" value="delete"><button class="btn btn-primary pull-right text-uppercase">Limpar</button></a>-->
+            </div>
 
-                  <div class="modal-body" >
-                    <div class="container" id="modal-body-01">
-                      <!--<h1 class="titulo-modal-h1">Pague 1 e leve duas!</h1>-->
-                      <div class="row">
+            <!-- Modal -->
+            <div class=" modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="img-header-position">
+                          <img class="img-fluid" src="images/" alt="">
+                        </div>
+                        <h5 class="modal-title" id="modalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span id="span-modal" aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
 
-                       <div id="modal-body-principal" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                          <div class="container">
-                            <img class="img-thumbnail" src="images/bannerGenerico.png" alt="">
-                              <h5 class="text-center">Promoção do dia!</h5>
-                              <p id="p-titulo-form">Preencha o formulário para um melhor atendimento!</italic>
-                              </p>
+                      <div class="modal-body" >
+                        <div class="container" id="modal-body-01">
+                          <!--<h1 class="titulo-modal-h1">Pague 1 e leve duas!</h1>-->
+                          <div class="row">
 
-                              <!--form-->
-                              <form name="form01" id="form01" class="" action="#" method="post">
-                                  <label>Cep: <span class="span-form-label"> (Obrigatório)</span>
-                                  <input name="Cep" type="text" id="cep" value="" size="10" maxlength="9"
-                                        onblur="pesquisacep(this.value);" /> </label><br />
-                                  <label>Rua:
-                                  <input name="Rua" type="text" id="rua" size="60" /></label><br />
+                          <div id="modal-body-principal" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="container">
+                                <img class="img-thumbnail" src="images/bannerGenerico.png" alt="">
+                                  <h5 class="text-center">Promoção do dia!</h5>
+                                  <p id="p-titulo-form">Preencha o formulário para um melhor atendimento!</italic>
+                                  </p>
 
-                                  <label for="Complemento">Complemento:<span class="span-form-label"> (Obrigatório)</span></label>
-                                  <input type="text" id="complemento" name="Complemento" placeholder="Número Casa / Apartamento"
-                                    required>
-                                  <br>
-                                  <label>Bairro:
-                                  <input name="Bairro" type="text" id="bairro" size="40" /></label><br />
+                                  <!--form-->
+                                  <form name="form01" id="form01" class="" action="#" method="post">
+                                      <label>Cep: <span class="span-form-label"> (Obrigatório)</span>
+                                      <input name="Cep" type="text" id="cep" value="" size="10" maxlength="9"
+                                            onblur="pesquisacep(this.value);" /> </label><br />
+                                      <label>Rua:
+                                      <input name="Rua" type="text" id="rua" size="60" /></label><br />
 
-                                  <label for="cliente"> Digite seu nome<span class="span-form-label"> (Obrigatório)</span></label>
-                                  <input type="text" id="cliente" name="Cliente" placeholder="Seu nome" required>
-                                  <br>
+                                      <label for="Complemento">Complemento:<span class="span-form-label"> (Obrigatório)</span></label>
+                                      <input type="text" id="complemento" name="Complemento" placeholder="Número Casa / Apartamento"
+                                        required>
+                                      <br>
+                                      <label>Bairro:
+                                      <input name="Bairro" type="text" id="bairro" size="40" /></label><br />
 
-                                  <label for="telefone"> Digite seu telefone<span class="span-form-label"> (Obrigatório)</span></label>
-                                  <input type="tel" required pattern="^\d{2}\d{5}\d{4}$" id="telefone" name="Telefone"
-                                    placeholder="21xxxxxxxxx">
+                                      <label for="cliente"> Digite seu nome<span class="span-form-label"> (Obrigatório)</span></label>
+                                      <input type="text" id="cliente" name="Cliente" placeholder="Seu nome" required>
+                                      <br>
+
+                                      <label for="telefone"> Digite seu telefone<span class="span-form-label"> (Obrigatório)</span></label>
+                                      <input type="tel" required pattern="^\d{2}\d{5}\d{4}$" id="telefone" name="Telefone"
+                                        placeholder="21xxxxxxxxx">
+                                        <br>
+
+                                        <label for="email">Digite seu email<span class="span-form-label"> (Obrigatório)</span></label>
+                                      <input type="email" id="email" name="Email" required placeholder="seuemail@email.com">
+                                      <br>
+                                      <br>
+                                    <h6>Escolha a forma de pagamento:<span class="span-form-label">(Obrigatório)</span></h6>
+                                    <select id="pagamento" class="" name="Pagamento" required>
+
+                                      <option value="Escolha uma opção" selected>Escolha uma opção</option>
+                                      <option value="Dinheiro">Dinheiro
+                                      </option>
+                                      <option value="Cartão débito">
+                                        Cartão de débito
+                                      </option>
+                                      <option value="Cartão de crédito">
+                                        Cartão de crédito
+                                      </option>
+                                    </select>
                                     <br>
-
-                                    <label for="email">Digite seu email<span class="span-form-label"> (Obrigatório)</span></label>
-                                  <input type="email" id="email" name="Email" required placeholder="seuemail@email.com">
-                                  <br>
-                                  <br>
-                                <h6>Escolha a forma de pagamento:<span class="span-form-label">(Obrigatório)</span></h6>
-                                <select id="pagamento" class="" name="Pagamento" required>
-
-                                  <option value="Escolha uma opção" selected>Escolha uma opção</option>
-                                  <option value="Dinheiro">Dinheiro
-                                  </option>
-                                  <option value="Cartão débito">
-                                    Cartão de débito
-                                  </option>
-                                  <option value="Cartão de crédito">
-                                    Cartão de crédito
-                                  </option>
-                                </select>
+                                    <br>
+                                    <label for="observacao">(Observações)<span class="span-form-label"> </span></label>
+                                      <input type="text-area" id="obsevacao" name="Observação" placeholder="">
+                                      <br>
+                                      <br>
+                                      <small class="text-uppercase text-uppercase texto-bolder informacao">Clique 2 vezes para Confirmar seus dados e depois em enviar pedido!</small><br><br>
+                                        <button class="btn btn-danger text-uppercase" onclick="dadosFormClienteEnvio()" id="btn1" type="submit">Confirmar dados</button>
+                                        <br>
+                                        <br>
+                                        <div class="text-danger text-center text-uppercase" id="confirmacao"></div>
+                                </form>
+                                    <!--Form-->
                                 <br>
-                                <br>
-                                <label for="observacao">(Observações)<span class="span-form-label"> </span></label>
-                                  <input type="text-area" id="obsevacao" name="Observação" placeholder="">
-                                  <br>
-                                  <br>
-                                  <small class="text-uppercase text-uppercase texto-bolder informacao">Clique 2 vezes para Confirmar seus dados e depois em enviar pedido!</small><br><br>
-                                    <button class="btn btn-danger text-uppercase" onclick="dadosFormClienteEnvio()" id="btn1" type="submit">Confirmar dados</button>
-                                    <br>
-                                    <br>
-                                    <div class="text-danger text-center text-uppercase" id="confirmacao"></div>
-                            </form>
-                                <!--Form-->
-                            <br>
+
+                              </div>
+                            </div>
 
                           </div>
                         </div>
+                      </div>
 
+                      <div class="modal-footer">
+                        <a href="" id="whatsapp-share-btt" onclick="dadosFormClienteEnvio()"
+                          target="_blank"><button type="submit" class="btn btn-primary text-uppercase">Enviar
+                            pedido</button> </a>
+                        <button type="button" class="btn btn-secondary text-uppercase" data-dismiss="modal">Fechar</button>
                       </div>
                     </div>
                   </div>
 
-                  <div class="modal-footer">
-                    <a href="" id="whatsapp-share-btt" onclick="dadosFormClienteEnvio()"
-                      target="_blank"><button type="submit" class="btn btn-primary text-uppercase">Enviar
-                        pedido</button> </a>
-                    <button type="button" class="btn btn-secondary text-uppercase" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-
-        </div>
-
+            </div>
         <!--Button trigger modal -->
-
-        </div>
+      </div>
 <!-- Acaba Promoção 01-->
 
 <!--Incicia produto Promoção 02-->
@@ -209,9 +202,7 @@
   <div id="promocao02" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     <div id="indisponivel02"></div>
       <div class="container">
-
         <img class="img-thumbnail" src="images/bannerPromocaoSemana02.png" alt="imagem da promoção">
-
         <div class="text-danger" id="resRad">
           <h5>Ganhe 1 brotinho Doce!</h5>
           <p class="text-uppercase">
@@ -223,11 +214,10 @@
       </div>
 
     <div class=" container text-danger" id="res"></div>
-
     <div id="botoesPromocao02" class="centralizar-flex-botoes-01">
      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-danger pull-left text-uppercase size-btn" data-toggle="modal" data-target="#modal">Eu quero!</button>
-  </div>
+        <button type="button" class="btn btn-danger pull-left text-uppercase size-btn" data-toggle="modal" data-target="#modal">Eu quero!</button>
+    </div>
     <!-- Modal -->
     <div class=" modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
@@ -259,18 +249,15 @@
 
     </div>
     <!--Button trigger modal -->
-
-    </div>
+  </div>
 
 <!--Acaba produto Promoção 02-->
 
 <!--Incicia produto Promoção 03-->
 
   <div id="promocao03" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-
     <div id="indisponivel03"></div>
     <div class="container">
-
       <img class="img-thumbnail" src="images/bannerPromocaoSemana03.png" alt="">
         <div class="text-danger" id="resRad">
           <!--<span id="checado" class="gg-check-r gg-check-r::after"></span>-->
@@ -279,13 +266,11 @@
             Promoção válida só sextas e sábados<br><span>Na compra de 1 pizza Gigante ganhe 1 refri 2 litros!</span></p>
         </div>
     </div>
-
     <div class=" container text-danger"  id="res"></div>
-
-    <div id="botoesPromocao03" class="centralizar-flex-botoes-01">
-     <!-- Button trigger modal -->
-      <button type="button" class="btn btn-danger pull-left text-uppercase size-btn" data-toggle="modal" data-target="#modal">Eu quero!</button>
-  </div>
+      <div id="botoesPromocao03" class="centralizar-flex-botoes-01">
+      <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger pull-left text-uppercase size-btn" data-toggle="modal" data-target="#modal">Eu quero!</button>
+      </div>
     <!-- Modal -->
     <div class=" modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
@@ -313,49 +298,70 @@
                             <!--Form-->
                       </div>
                         <br>
-
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <a href="" id="whatsapp-share-btt" onclick="dadosFormClienteEnvio()"
-                  target="_blank"><button type="submit" class="btn btn-primary text-uppercase">Enviar
-                    pedido</button> </a>
-                <button type="button" class="btn btn-secondary text-uppercase" data-dismiss="modal">Fechar</button>
-                <!--<button class="btn  btn-danger" type="submit">Fazer pedido</button>-->
-              </div>
+                <div class="modal-footer">
+                  <a href="" id="whatsapp-share-btt" onclick="dadosFormClienteEnvio()"
+                    target="_blank"><button type="submit" class="btn btn-primary text-uppercase">Enviar
+                      pedido</button> </a>
+                  <button type="button" class="btn btn-secondary text-uppercase" data-dismiss="modal">Fechar</button>
+                  <!--<button class="btn  btn-danger" type="submit">Fazer pedido</button>-->
+                </div>
             </div>
           </div>
 
     </div>
     <!--Button trigger modal -->
-
-    </div>
+  </div>
 
   <!--Acaba produto Promoção 03-->
-  </div>
+</div>
 <div class="container">
-  <div id="promocaoStrogonoff" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-    
-    <h1 class="text-center promocaoTitulo" id="">Promoção Strogonoff</h1>
-    <img class="img-fluid img-thumbnail" src="images/strogonoff.png" alt=""></a>
-    <div class="text-danger" id="resRad">
-      <h5>Strogonoff de Frango ou Carne!</h5>
-      <span class="text-uppercase">
-        R$26,00 (Acompanhamentos: Arroz e fritas)
-      </span>
-        <span></span>
-      </p>
+  <div class="row">
+    <div id="promocaoStrogonoff" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <h1 class="text-center promocaoTitulo" id="">Promoção Strogonoff</h1>
+      <img class="img-fluid img-thumbnail" src="images/estrogonofe_de_carne.jpg" alt=""></a>
+        <div class="text-danger" id="resRad">
+          <h5>Strogonoff de Frango ou Carne!</h5>
+          <span class="text-uppercase">
+            R$26,00 (Acompanhamentos: Arroz e fritas)
+          </span>
+        </div>
+      <a href="strogonoff.html" target="_blank" alt="Promoção strogonoff" title="Clique para ver a promoção"><button type="button" class="btn btn-danger btn-size pull-left text-uppercase size-btn">Eu quero!</button></a>
 
     </div>
-    <a href="strogonoff.html" target="_blank" alt="Promoção strogonoff" title="Clique para ver a promoção"><button type="button" class="btn btn-danger btn-size pull-left text-uppercase size-btn">Eu quero!</button></a>
 
+    <div id="promocaoStrogonoff" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <h1 class="text-center promocaoTitulo" id="">Promoção Nhoque</h1>
+      <img class="img-fluid img-thumbnail" src="images/inhoque.jpg" alt=""></a>
+        <div class="text-danger" id="resRad">
+          <h5>Nhoque com carne assada</h5>
+          <span class="text-uppercase">
+            R$26,00 
+          </span>
+        </div>
+      <a href="nhoque.html" target="_blank" alt="Promoção strogonoff" title="Clique para ver a promoção"><button type="button" class="btn btn-danger btn-size pull-left text-uppercase size-btn">Eu quero!</button></a>
+
+    </div>
+
+    <div id="promocaoStrogonoff" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <h1 class="text-center promocaoTitulo" id="">Promoção Escalopinho</h1>
+      <img class="img-fluid img-thumbnail" src="images/escalopinho.jpg" alt=""></a>
+        <div class="text-danger" id="resRad">
+          <h5>Escalopinho ao molho madeira</h5>
+          <span class="text-uppercase">
+            R$30,00 (Arroz apiamontese e fritas)
+          </span>
+        </div>
+      <a href="escalopinho.html" target="_blank" alt="Promoção strogonoff" title="Clique para ver a promoção"><button type="button" class="btn btn-danger btn-size pull-left text-uppercase size-btn">Eu quero!</button></a>
+
+    </div>
   </div>
 </div>
-</div>
+
 
 <footer>
   <div class="container">

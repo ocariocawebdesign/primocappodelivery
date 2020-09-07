@@ -21,6 +21,7 @@ header {
 
 .tituloTop {
   font-family: "Anton", sans-serif;
+  font-size: 22px;
 }
 
 h1 {
@@ -65,7 +66,7 @@ p {
   color: #333;
 }
 span {
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(177, 46, 46);
 }
 
@@ -111,7 +112,6 @@ span {
   font-weight: bold;
 }
 
-
 #promocao01 {
   padding: 0.5rem;
 }
@@ -139,6 +139,7 @@ span {
   color: rgb(224, 54, 54);
   font-size: 15px !important;
   text-align: center !important;
+  font-weight: bold;
 }
 
 #indisponivel02 {
@@ -146,6 +147,8 @@ span {
   color: rgb(224, 54, 54);
   font-size: 15px !important;
   text-align: center !important;
+  font-weight: bold;
+
 }
 
 #indisponivel03 {
@@ -153,6 +156,8 @@ span {
   color: rgb(224, 54, 54);
   font-size: 15px !important;
   text-align: center !important;
+  font-weight: bold;
+
 }
 
 #containerDelivery {
@@ -250,50 +255,42 @@ i {
   display: flex;
   flex-direction: column;
   /*border-left: 1px solid rgb(231, 227, 227);*/
-  justify-content: center!important;
-  align-items: center!important;
+  justify-content: center !important;
+  align-items: center !important;
   padding: 2rem;
   /*margin-left: 0.1rem;*/
 }
 
 .formPromobotao {
-
   display: inline-block;
   flex-direction: column;
   /*justify-content: center!important;*/
-  
+
   padding: 0.8rem;
 }
 
-.size-btn{
-
+.size-btn {
   width: 100%;
 }
 
-.promocaoTitulo{
-
+.promocaoTitulo {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   font-family: "Anton", sans-serif;
-  color:#d40000;
-
-
+  color: #d40000;
 }
 
-.container-central{
+.container-central {
   display: flex;
   flex-direction: column;
-  justify-content: center!important;
-  align-items: center!important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-#promocaoStrogonoff{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-
+#promocaoStrogonoff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-

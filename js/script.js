@@ -33,8 +33,10 @@ if (
   indisponivel03.innerHTML = "Promoção indisponível";
   botoesPromocao02.style.display = "none";
   botoesPromocao03.style.display = "none";
-  promocao02.style.background = "rgba(44, 42, 44, 0.3)";
-  promocao03.style.background = "rgba(44, 42, 44, 0.3)";
+  promocao02.style.background = "#FAFAFA";
+  promocao02.style.borderRadius = "2px";
+  promocao03.style.background = "#FAFAFA";
+  promocao03.style.borderRadius = "2px";
 } else if (
   diaPromocao === "Terça-Ganhe-1-brotinho-doce" ||
   diaPromocao === "Quinta-Ganhe-1-brotinho-doce"
