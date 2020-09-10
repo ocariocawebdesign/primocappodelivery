@@ -171,7 +171,7 @@ function dadosFormClienteEnvio() {
       dados["enderecoRua"] = document.querySelector("#rua").value;
       dados["enderecoBairro"] = document.querySelector("#bairro").value;
       dados["enderecoComplemento"] = document.querySelector("#complemento").value;
-      dados["saborEscolhido"] = value;
+      dados["saborEscolhido"] = select.options[select.selectedIndex].value;
       //dados["pagamentoEscolhido"] = formaPagamento;
 
       console.log(dados);
