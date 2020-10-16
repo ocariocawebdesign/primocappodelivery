@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 header {
   background-image: url(../images/background-pizza03.jpg);
@@ -7,21 +8,28 @@ header {
   background-size: cover;
   opacity: 0.9;
   z-index: 1;
+  padding: 0;
 }
 
-#logoTopo {
-  z-index: 2;
+.container-top {
+  padding: 0.8rem;
 }
+
+/*#logoTopo {
+  z-index: 2;
+}*/
 
 .container-logo {
   display: flex;
   width: 100%;
   justify-content: center;
+  padding: 4rem;
 }
 
 .tituloTop {
-  font-family: "Anton", sans-serif;
-  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 h1 {
@@ -51,6 +59,14 @@ p {
 .informacao {
   font-size: 12px !important;
   color: red;
+}
+
+.descricaoPratos {
+  font-size: 0.875rem;
+  margin: 10px 0 0;
+  font-weight: 300;
+  line-height: 1.22;
+  color: #717171;
 }
 
 #confirmacao {
@@ -92,7 +108,7 @@ span {
 }
 
 #container-principal {
-  padding: 2rem;
+  padding: 0;
 }
 
 #res {
@@ -124,6 +140,10 @@ span {
   padding: 0.5rem;
 }
 
+#promocaoStrogonof {
+  margin: auto;
+}
+
 #resRad {
   font-weight: bold;
   font-size: 10pt;
@@ -148,7 +168,6 @@ span {
   font-size: 15px !important;
   text-align: center !important;
   font-weight: bold;
-
 }
 
 #indisponivel03 {
@@ -157,7 +176,6 @@ span {
   font-size: 15px !important;
   text-align: center !important;
   font-weight: bold;
-
 }
 
 #containerDelivery {
@@ -262,24 +280,58 @@ i {
 }
 
 .formPromobotao {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
-  /*justify-content: center!important;*/
-
+  justify-content: center !important;
   padding: 0.8rem;
 }
 
-.size-btn {
-  width: 100%;
+#btn1 {
+  margin-bottom: 1rem;
 }
 
+.size-btn {
+  width: 80%;
+}
+
+.price {
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #50a773;
+  text-align: left;
+}
+
+.h5-price {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #717171;
+}
 .promocaoTitulo {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   font-family: "Anton", sans-serif;
-  color: #d40000;
+  color: #dc3545;
+  margin-top: 12px;
+}
+
+.description-produtos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 0.8rem;
+}
+
+.destaquesTitulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.125rem;
+  margin: 0;
+  color: #3f3e3e;
 }
 
 .container-central {
@@ -289,8 +341,41 @@ i {
   align-items: center !important;
 }
 
-#promocaoStrogonoff {
+.box-destaques {
+  border-bottom: 1px solid #dbd9d9;
+  padding: 0.5rem;
+}
+
+#promocoesBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+#promocoesBox a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+/*Alert sweet*/
+
+.swal-button {
+  padding: 0.5rem;
+  color: #ffffff;
+  background-color: #e5442f;
+  font-weight: bold;
+}
+
+.social-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  padding: 0.2rem;
 }

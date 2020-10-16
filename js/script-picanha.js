@@ -34,7 +34,7 @@ function dadosFormClienteEnvio() {
         "#complemento"
       ).value;
 
-      console.log(dados);
+      //console.log(dados);
       btn1.addEventListener("click", () => {
         swal("Dados confirmados!", "Clique em enviar pedido!", "success");
         confirmacao.innerHTML = "Dados confirmados! Clique em enviar pedido.";
@@ -42,7 +42,7 @@ function dadosFormClienteEnvio() {
 
       dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
       document.getElementById("whatsapp-share-btt").href = encodeURI(
-        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoção Escalopinho ao Molho Madeira da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Telefone: ${dados.telefoneCliente} | Email: ${dados.emailCliente} | Cep: ${dados.cepCliente} | Rua: ${dados.enderecoRua} | Bairro: ${dados.enderecoBairro} | Complemento: ${dados.enderecoComplemento}.`
+        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoção filé de Picanha da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Telefone: ${dados.telefoneCliente} | Email: ${dados.emailCliente} | Cep: ${dados.cepCliente} | Rua: ${dados.enderecoRua} | Bairro: ${dados.enderecoBairro} | Complemento: ${dados.enderecoComplemento}.`
       );
     },
     false

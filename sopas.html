@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -12,7 +14,7 @@
       gtag("js", new Date());
 
       gtag("config", "UA-175247891-1");
-    </script>-->
+    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -57,17 +59,15 @@
       content="http://primocappo.com.br//images/images/logo_cappo.png"
     />
     <title>Promoções PrimoCappo</title>
-
-    <link
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
@@ -97,9 +97,19 @@
                   >
                 </h6>
 
-                <select id="sabores" class="" name="Opções" required>
-                  <option value="Carne" selected>Carne</option>
-                  <option value="Frango">Frango</option>
+                <select name="listaSabores" id="sabores">
+                  <option value="Aipim">Aipim</option>
+                  <option value="Aipim com camarão">Aipim com camarão</option>
+                  <option value="Aipim com carne seca">
+                    Aipim com carne seca
+                  </option>
+                  <option value="Creme de abóbora com camarão">
+                    Creme de abóbora com camarão
+                  </option>
+                  <option value="Creme de abóbora com carne seca">
+                    Creme de abóbora com carne seca
+                  </option>
+                  <option value="Sopa de ervilha">Sopa de ervilha</option>
                 </select>
                 <br />
                 <label for="cliente">
@@ -181,22 +191,18 @@
                 id="formPromo02"
                 class="col-xs-12 col-sm-12 col-md-6 col-lg-6"
               >
-                <h5 class="promocaoTitulo">Strogonoff carne ou frango</h5>
+                <h5 class="promocaoTitulo">Caldos e sopas</h5>
 
-                <img
-                  class="img-thumbnail"
-                  src="images/estrogonofe_de_carne.jpg"
-                  alt=""
-                />
+                <img class="img-thumbnail" src="images/sopas-01.png" alt="" />
 
                 <br />
                 <br />
                 <div class="description-produtos">
                   <h5 class="h5-price text-left">
-                    <span class="price text-left">R$26,00</span> - Acompanha arroz e fritas.
+                    <span class="price text-left">R$17,00</span> - Caldos e
+                    sopas. (Aipim, Aipim c/ camarão, Aipim c/ carne seca, Creme de abóbora c/ camarão, Creme de abóbora c/ carne seca, sopa de ervilha.)
                   </h5>
                 </div>
-                <h5 class=""></h5>
                 <div class="formPromobotao">
                   <h5
                     class="text-uppercase text-uppercase texto-bolder informacao"
@@ -276,22 +282,7 @@
       </div>
     </footer>
 
-    <script src="js/script-form.js"></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/getendereco.js"></script>
+    <script src="js/sopas.js"></script>
   </body>
 </html>

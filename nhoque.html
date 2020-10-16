@@ -3,7 +3,10 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -12,7 +15,7 @@
       gtag("js", new Date());
 
       gtag("config", "UA-175247891-1");
-    </script>-->
+    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -91,21 +94,13 @@
           <form id="form01">
             <div class="row">
               <div id="formPromo" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <!--<h6>
-                  Escolha o sabor:<span class="span-form-label"
-                    >(Obrigatório)</span
-                  >
-                </h6>
-              <select id="sabores" class="" name="Opções" required>
-                  <option value="Carne" selected>Carne</option>
-                  <option value="Frango">Frango</option>
-                </select>-->
-                <br>
+                <br />
                 <label for="cliente">
                   Digite seu nome<span class="span-form-label">
                     (Obrigatório)</span
-                  ></label>
-               
+                  ></label
+                >
+
                 <input
                   type="text"
                   id="cliente"
@@ -152,12 +147,11 @@
                     size="10"
                     maxlength="9"
                     onblur="pesquisacep(this.value);"
-                  /> </label
-                >
+                  />
+                </label>
                 <label
-                  >Rua:
-                  <input name="Rua" type="text" id="rua" size="60" /></label
-                >
+                  >Rua: <input name="Rua" type="text" id="rua" size="60"
+                /></label>
                 <label>Bairro:</label>
                 <input name="Bairro" type="text" id="bairro" />
 
@@ -173,8 +167,8 @@
                   placeholder="Número Casa / Apartamento"
                   required
                 />
-               <br>
-               
+                <br />
+
                 <br />
               </div>
 
@@ -188,7 +182,13 @@
 
                 <br />
                 <br />
-                <h5 class="text-left">R$26,00 Nhoque com carne assada </h5>
+                <div class="description-produtos">
+                  <h5 class="h5-price text-left">
+                    <span class="price text-left">R$26,00</span> - Nhoque com
+                    carne assada.
+                  </h5>
+                </div>
+
                 <div class="formPromobotao">
                   <h5
                     class="text-uppercase text-uppercase texto-bolder informacao"
@@ -267,6 +267,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/getendereco.js"></script>
 
     <script src="js/script-nhoque.js"></script>
 
