@@ -343,9 +343,16 @@ i {
 
 .box-destaques {
   border-bottom: 1px solid #dbd9d9;
-  padding: 0.5rem;
+  padding: 3rem;
 }
 
+#container-destaques {
+  margin-top: 3rem;
+}
+
+#container-destaques-footer {
+  margin-top: 3rem;
+}
 #promocoesBox {
   display: flex;
   flex-direction: column;

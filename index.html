@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel='manifest' href='manifest.json'>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/galeria.css">
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -67,6 +68,33 @@
     <h1 class="text-center tituloTop"><strong>Promoções Delivery</strong></h1>
     <h5 class="text-center text-danger tituloTop">Pedidos a partir das 18:30H | Entregas em toda zona sul
     </h5>
+    <!--Galeria-->
+    <div id="box-galeria" class="">
+      <div class="galeria">
+        <img class="img-fluid" src="images/background04.jpg" alt="Orfanato" />
+        <div class="images">
+          <button onclick="selectImage(event)" class="active" type="button">
+            <img class="img-thumbnail" src="images/background05.jpg" alt="" />
+          </button>
+          <button onclick="selectImage(event)" class="" type="button">
+            <img class="img-thumbnail" src="images/background04.jpg" alt="" />
+          </button>
+          <button class="imag-thumbnail" onclick="selectImage(event)" class="" type="button">
+            <img class="img-thumbnail" src="images/background-pizza03.jpg" alt="" />
+          </button>
+          <button " onclick="selectImage(event)" class="" type="button">
+            <img class="img-thumbnail" src="images/background05.jpg" alt="" />
+          </button>
+          <button  onclick="selectImage(event)" class="" type="button">
+            <img class="img-thumbnail" src="images/background-pizza03.jpg" alt="" />
+          </button>
+          <button onclick="selectImage(event)" class="" type="button">
+            <img class="img-thumbnail" src="images/background05.jpg" alt="" />
+          </button>
+        </div>
+      </div>
+
+    </div>
   </div>
   <div id="container-principal" class="container">
     <div class="row">
@@ -335,7 +363,7 @@
 
   </div>
 
-  <div class="container">
+  <div id="container-destaques" class="container">
     <div class="row">
       <div id="promocoesBox" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <h1 class="text-center promocaoTitulo" id="">Strogonoff</h1>
@@ -418,9 +446,12 @@
       </div>
     </div>
   </div>
+  <div class="container box-destaques">
+    <h2 class="text-left destaquesTitulo"></h2>
 
+  </div>
   <footer>
-    <div class="container">
+    <div id="container-destaques-footer" class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 centralizar-flex-botoes-01"><a target="_blank"
             href="https://app.menudino.com/primocappo"><img class="img-thumbnail float-right"
@@ -442,7 +473,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/galeria.js"></script>
   <script src="js/getendereco.js"></script>
   <script src="js/script.js"></script>
 
