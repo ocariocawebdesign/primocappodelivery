@@ -3,10 +3,6 @@
 let form = document.querySelector("#form01");
 let btn1 = document.querySelector("#btn1");
 let confirmacao = document.querySelector("#confirmacao");
-//let select = document.querySelector("#sabores");
-//let value = select.options[select.selectedIndex].value;
-//let pagamento = document.querySelector("#pagamento");
-//let formaPagamento = pagamento.options[pagamento.selectedIndex].value;
 
 function dadosFormClienteEnvio() {
   console.log("script carregou");

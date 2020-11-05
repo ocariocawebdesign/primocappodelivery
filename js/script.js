@@ -156,3 +156,17 @@ const sabores = [
   "Primo",
   "Tomate seco com rúcula",
 ];
+
+
+//Efeito pulse
+const imgsDestaques = document.querySelectorAll("#container-destaques img");
+console.log(imgsDestaques);
+
+imgsDestaques.forEach((item) => {
+  const estado01 = item.classList.contains("efeito-pulse");
+  if (estado01 === false) {
+    item.addEventListener("mouseenter", () => {
+      item.classList.toggle("efeito-pulse");
+    });
+  }
+});
