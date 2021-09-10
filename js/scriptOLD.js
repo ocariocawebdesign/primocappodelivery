@@ -1,6 +1,10 @@
 "use strict";
 //Promoções
 
+$(window).load(function () {
+  $("#myModal").modal("show");
+});
+
 let promocao01 = document.querySelector("#promocao01");
 let promocao02 = document.querySelector("#promocao02");
 let promocao03 = document.querySelector("#promocao03");
@@ -107,11 +111,12 @@ function dadosFormClienteEnvio() {
       dados["enderecoComplemento"] = document.querySelector(
         "#complemento"
       ).value;
-      dados["pagamentoEscolhido"] = pagamento;
+      dados["pagamentoEscolhido"] = pagamento; //document.querySelector("#pagamento").value;
       dados["nomeCliente"] = document.querySelector("#cliente").value;
       dados["telefoneCliente"] = document.querySelector("#telefone").value;
       dados["emailCliente"] = document.querySelector("#email").value;
       dados["obsevacaoCliente"] = document.querySelector("#obsevacao").value;
+      //dados["adicionalOpcoes"] = document.querySelectorAll("[name=Adicional]");
 
       btn1.addEventListener("click", () => {
         swal("Dados confirmados!", "Clique em enviar pedido!", "success");
@@ -120,7 +125,7 @@ function dadosFormClienteEnvio() {
 
       dadosCliente = dadosCliente.replace(/[ ]/g, "\n");
       document.getElementById("whatsapp-share-btt").href = encodeURI(
-        `https://api.whatsapp.com/send?phone=5521971025148&text=Olá! Acessei a página Promoções Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Promoção do dia: ${diaPromocao} | Bairro: ${dados.enderecoBairro} | ${dadosCliente}.`
+        `https://api.whatsapp.com/send?phone=5521998549958&text=Olá! Acessei a página Promoções Delivery da PrimoCappo: Meu nome é: ${dados.nomeCliente} | Promoção do dia: ${diaPromocao} | Bairro: ${dados.enderecoBairro} | ${dadosCliente}.`
       );
     },
     false
@@ -155,16 +160,3 @@ const sabores = [
   "Primo",
   "Tomate seco com rúcula",
 ];
-
-//Efeito pulse
-const imgsDestaques = document.querySelectorAll("#container-destaques img");
-console.log(imgsDestaques);
-
-imgsDestaques.forEach((item) => {
-  const estado01 = item.classList.contains("efeito-pulse");
-  if (estado01 === false) {
-    item.addEventListener("mouseenter", () => {
-      item.classList.toggle("efeito-pulse");
-    });
-  }
-});

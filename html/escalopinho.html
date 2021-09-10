@@ -3,7 +3,10 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -12,7 +15,7 @@
       gtag("js", new Date());
 
       gtag("config", "UA-175247891-1");
-    </script>-->
+    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -81,8 +84,7 @@
     </header>
 
     <div id="container-principal" class="container">
-      <h1 class="text-center text-uppercase tituloTop">Promoções Delivery</h1>
-      <h5 class="text-center text-danger text-uppercase tituloTop">
+      <h1 class="text-center tituloTop"><strong>Promoções Delivery</strong></h1>      <h5 class="text-center text-danger tituloTop">
         Pedidos a partir das 18:30H | Entregas em toda zona sul
       </h5>
 
@@ -91,16 +93,6 @@
           <form id="form01">
             <div class="row">
               <div id="formPromo" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <h6>
-                  Escolha o sabor:<span class="span-form-label"
-                    >(Obrigatório)</span
-                  >
-                </h6>
-
-                <select id="sabores" class="" name="Opções" required>
-                  <option value="Carne" selected>Carne</option>
-                  <option value="Frango">Frango</option>
-                </select>
                 <br />
                 <label for="cliente">
                   Digite seu nome<span class="span-form-label">
@@ -175,17 +167,29 @@
                   required
                 />
                 <br />
+                <!--<h6>
+                  Escolha a forma de pagamento:<span class="span-form-label"
+                    >(Obrigatório)</span
+                  >
+                </h6>
+                <select id="pagamento" class="" name="Pagamento" required>
+                 
+                  <option value="Dinheiro" selected>Dinheiro</option>
+                  <option value="Cartão débito">Cartão de débito</option>
+                  <option value="Cartão de crédito">Cartão de crédito</option>
+                </select>-->
+                <br />
               </div>
 
               <div
                 id="formPromo02"
                 class="col-xs-12 col-sm-12 col-md-6 col-lg-6"
               >
-                <h5 class="promocaoTitulo">Strogonoff carne ou frango</h5>
+                <h5 class="promocaoTitulo">Escalopinho ao Molho Madeira</h5>
 
                 <img
                   class="img-thumbnail"
-                  src="images/estrogonofe_de_carne.jpg"
+                  src="images/escalopinho.jpg"
                   alt=""
                 />
 
@@ -193,11 +197,10 @@
                 <br />
                 <div class="description-produtos">
                   <h5 class="h5-price text-left">
-                    <span class="price text-left">R$26,00</span> - Acompanha
-                    arroz e fritas.
+                    <span class="price text-left">R$30,00</span> - Filé mingon, arroz à piamontese, molho madeira e batata frita.
+                    
                   </h5>
-                </div>
-                <h5 class=""></h5>
+            
                 <div class="formPromobotao">
                   <h5
                     class="text-uppercase text-uppercase texto-bolder informacao"
@@ -286,7 +289,9 @@
       </div>
     </footer>
 
-    <script src="js/script-form.js"></script>
+    <script src="js/getendereco.js"></script>
+
+    <script src="js/script-escalopinho.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

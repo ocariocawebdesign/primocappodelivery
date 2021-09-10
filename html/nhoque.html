@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-175247891-1"
@@ -59,15 +60,17 @@
       content="http://primocappo.com.br//images/images/logo_cappo.png"
     />
     <title>Promoções PrimoCappo</title>
+
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/estilo.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
@@ -81,8 +84,8 @@
     </header>
 
     <div id="container-principal" class="container">
-      <h1 class="text-center text-uppercase tituloTop">Promoções Delivery</h1>
-      <h5 class="text-center text-danger text-uppercase tituloTop">
+      <h1 class="text-center tituloTop"><strong>Promoções Delivery</strong></h1>
+      <h5 class="text-center text-danger tituloTop">
         Pedidos a partir das 18:30H | Entregas em toda zona sul
       </h5>
 
@@ -91,26 +94,6 @@
           <form id="form01">
             <div class="row">
               <div id="formPromo" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <h6>
-                  Escolha o sabor:<span class="span-form-label"
-                    >(Obrigatório)</span
-                  >
-                </h6>
-
-                <select name="listaSabores" id="sabores">
-                  <option value="Aipim">Aipim</option>
-                  <option value="Aipim com camarão">Aipim com camarão</option>
-                  <option value="Aipim com carne seca">
-                    Aipim com carne seca
-                  </option>
-                  <option value="Creme de abóbora com camarão">
-                    Creme de abóbora com camarão
-                  </option>
-                  <option value="Creme de abóbora com carne seca">
-                    Creme de abóbora com carne seca
-                  </option>
-                  <option value="Sopa de ervilha">Sopa de ervilha</option>
-                </select>
                 <br />
                 <label for="cliente">
                   Digite seu nome<span class="span-form-label">
@@ -185,26 +168,27 @@
                   required
                 />
                 <br />
+
+                <br />
               </div>
 
               <div
                 id="formPromo02"
                 class="col-xs-12 col-sm-12 col-md-6 col-lg-6"
               >
-                <h5 class="promocaoTitulo">Caldos e sopas</h5>
+                <h5 class="promocaoTitulo">Nhoque com carne assada</h5>
 
-                <img class="img-thumbnail" src="images/sopas-01.png" alt="" />
+                <img class="img-thumbnail" src="images/inhoque.jpg" alt="" />
 
                 <br />
                 <br />
                 <div class="description-produtos">
                   <h5 class="h5-price text-left">
-                    <span class="price text-left">R$17,00</span> - Caldos e
-                    sopas. (Aipim, Aipim c/ camarão, Aipim c/ carne seca, Creme
-                    de abóbora c/ camarão, Creme de abóbora c/ carne seca, sopa
-                    de ervilha.)
+                    <span class="price text-left">R$26,00</span> - Nhoque com
+                    carne assada.
                   </h5>
                 </div>
+
                 <div class="formPromobotao">
                   <h5
                     class="text-uppercase text-uppercase texto-bolder informacao"
@@ -292,8 +276,24 @@
         </div>
       </div>
     </footer>
-
     <script src="js/getendereco.js"></script>
-    <script src="js/sopas.js"></script>
+
+    <script src="js/script-nhoque.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
